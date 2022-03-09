@@ -1,4 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FiMail } from 'react-icons/fi';
 
 const Footer = () => {
 	return (
@@ -7,6 +10,17 @@ const Footer = () => {
 				<div className="flex items-center justify-between">
 					<div className="flex items-center text-white">
 						Made with ❤️ in Argentina
+					</div>
+					<div className="flex items-center">
+						<Link to={'/'} className="p-3">
+							<FaLinkedin color="white" size={25} />
+						</Link>
+						<Link to={'/'} className="p-3">
+							<FaGithub color="white" size={25} />
+						</Link>
+						<Link to={'/'} className="p-3">
+							<FiMail color="white" size={25} />
+						</Link>
 					</div>
 				</div>
 			</div>
